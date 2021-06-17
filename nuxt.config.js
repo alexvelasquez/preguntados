@@ -29,8 +29,27 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [],
+  modules: ['@nuxtjs/firebase'],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
+  firebase: {
+    config: {
+      apiKey: 'AIzaSyDoetSHpwXo5QfnSJQqQN0tszbNkvI1OJg',
+      authDomain: 'preguntados-1f6e7.firebaseapp.com',
+      projectId: 'preguntados-1f6e7',
+      storageBucket: 'preguntados-1f6e7.appspot.com',
+      messagingSenderId: '151747463597',
+      appId: '1:151747463597:web:ea41c202e35cfd522bb924',
+      measurementId: "G-NBDNKTRZM9"
+    },
+    services: {
+      auth: true,
+      firestore: true,
+      storage: true,
+      analytics: true,
+      performance: true,
+      analytics: true
+    }
+  }
 }
